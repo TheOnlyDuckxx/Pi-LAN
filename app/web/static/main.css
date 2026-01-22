@@ -1,0 +1,4 @@
+/* Utilite: style minimal; fonctionnement: donne une lisibilite simple au dashboard. */
+body { font-family: sans-serif; margin: 0; }
+.nav { display: flex; gap: 1rem; padding: 1rem; background: #f0f0f0; }
+.container { padding: 1rem; }

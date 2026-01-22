@@ -1,0 +1,2 @@
+192.168.1.10 dev eth0 lladdr aa:bb:cc:dd:ee:ff REACHABLE
+192.168.1.11 dev eth0 lladdr 11:22:33:44:55:66 STALE

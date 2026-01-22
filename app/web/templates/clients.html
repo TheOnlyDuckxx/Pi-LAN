@@ -1,0 +1,20 @@
+<!-- Utilite: page clients; fonctionnement: affiche la liste des machines. -->
+{% extends "base.html" %}
+{% block content %}
+<h1>Clients</h1>
+<table>
+  <thead>
+    <tr><th>IP</th><th>MAC</th><th>Alias</th><th>Derniere vue</th></tr>
+  </thead>
+  <tbody>
+    {% for c in clients %}
+      <tr>
+        <td>{{ c.ip }}</td>
+        <td>{{ c.mac }}</td>
+        <td>{{ c.alias }}</td>
+        <td>{{ c.last_seen }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,16 @@
+[project]
+name = "lanhub"
+version = "0.1.0"
+description = "Hub LAN pour discovery, diagnostics et catalogue jeux"
+requires-python = ">=3.10"
+
+dependencies = [
+  "fastapi>=0.110",
+  "uvicorn>=0.25",
+  "jinja2>=3.1",
+  "pydantic-settings>=2.2",
+  "aiosqlite>=0.19",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

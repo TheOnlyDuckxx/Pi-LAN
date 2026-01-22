@@ -1,0 +1,22 @@
+<!-- Utilite: layout commun; fonctionnement: definit navbar et bloc de contenu. -->
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LANHub</title>
+    <link rel="stylesheet" href="/static/main.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="/">Accueil</a>
+      <a href="/clients">Clients</a>
+      <a href="/diagnostics">Diagnostics</a>
+      <a href="/games">Jeux</a>
+    </nav>
+    <main class="container">
+      {% block content %}{% endblock %}
+    </main>
+    <script src="/static/main.js"></script>
+  </body>
+</html>
